@@ -8,8 +8,6 @@ module "mysql_sg" {
     common_tags = var.common_tags
 }
 
-
-
 module "bastion_sg" {
     source = "git::https://github.com/DAWS-82S/terraform-aws-securitygroup.git?ref=main"
     project_name = var.project_name
